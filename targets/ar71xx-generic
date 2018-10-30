@@ -20,12 +20,12 @@ factory
 device alfa-network-ap121f ap121f ap121f
 factory
 
-device alfa-network-hornet-ub hornet-ub HORNETUB
-alias alfa-network-ap121
-alias alfa-network-ap121u
+#device alfa-network-hornet-ub hornet-ub HORNETUB # kernel size?
+#alias alfa-network-ap121
+#alias alfa-network-ap121u
 
-device alfa-network-tube2h tube2h-8M TUBE2H8M
-device alfa-network-n2-n5 alfa-nx ALFANX
+#device alfa-network-tube2h tube2h-8M TUBE2H8M # kernel size?
+#device alfa-network-n2-n5 alfa-nx ALFANX # kernel size?
 
 
 # Allnet
@@ -208,11 +208,11 @@ device tp-link-archer-c7-v2 archer-c7-v2
 packages $ATH10K_PACKAGES
 factory -squashfs-factory${GLUON_REGION:+-${GLUON_REGION}} .bin
 
-device tp-link-archer-c7-v4 archer-c7-v4
-packages $ATH10K_PACKAGES
+#device tp-link-archer-c7-v4 archer-c7-v4 # kernel size
+#packages $ATH10K_PACKAGES
 
-device tp-link-archer-c7-v5 archer-c7-v5
-packages $ATH10K_PACKAGES
+#device tp-link-archer-c7-v5 archer-c7-v5 # kernel size
+#packages $ATH10K_PACKAGES
 
 if [ "$BROKEN" ]; then
 device tp-link-archer-c25-v1 archer-c25-v1 # BROKEN: OOM with 5GHz enabled in most environments
